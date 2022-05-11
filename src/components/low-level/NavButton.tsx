@@ -1,4 +1,4 @@
-import { Box, Button, styled, Typography } from '@mui/material'
+import { Button, styled, Typography } from '@mui/material'
 import { theme } from '../../utils/theme';
 
 type Props = {

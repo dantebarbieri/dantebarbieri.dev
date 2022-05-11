@@ -1,4 +1,4 @@
-import { AppBar, Button } from '@mui/material'
+import { AppBar } from '@mui/material'
 import { theme } from '../../utils/theme'
 import LogoButton from '../mid-level/LogoButton'
 import NavButtons from '../mid-level/NavButtons'
