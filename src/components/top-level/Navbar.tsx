@@ -14,15 +14,14 @@ const buttons = {
 const Navbar = (props: Props) => {
   return (
     <AppBar position='sticky' sx={{
-      paddingBottom: theme.spacing(3),
-      paddingTop: theme.spacing(3),
+      padding: theme.spacing(3),
       color: theme.palette.primary.main,
       backgroundColor: theme.palette.background.default,
       boxShadow: 'none'
     }}>
       <nav style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
-        <LogoButton />
-        <NavButtons buttons={buttons} />
+        <LogoButton height={48} />
+        <NavButtons buttons={buttons} activeButton={window.location.pathname} />
       </nav>
     </AppBar>
   )

@@ -4,6 +4,7 @@ import { theme } from '../../utils/theme';
 type Props = {
   text: string
   href: string
+  active?: boolean
 }
 
 const BoxButton = styled(Button)(() => ({
@@ -24,13 +25,16 @@ const BoxButton = styled(Button)(() => ({
 }));
 
 const NavButton = (props: Props) => {
-  const { text, href } = props
+  const { text, href, active } = props
 
   return (
       <BoxButton
         focusRipple
         disableRipple
         href={href}
+        sx={{
+          color: active ? theme.palette.secondary.main : theme.palette.primary.main
+        }}
       >
         <Typography
           component="span"
@@ -40,7 +44,8 @@ const NavButton = (props: Props) => {
             position: 'relative',
             p: theme.spacing(7),
             pt: theme.spacing(4),
-            pb: theme.spacing(4)
+            pb: theme.spacing(4),
+            fontSize: theme.spacing(3.5)
           }}
         >
           {text}
