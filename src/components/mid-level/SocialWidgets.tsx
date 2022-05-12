@@ -11,11 +11,11 @@ interface IconButtonData {
 }
 
 type Props = {
-  buttons: {[label: string]: IconButtonData}
+  widgets: {[label: string]: IconButtonData}
 }
 
 const SocialWidgets = (props: Props) => {
-  const { buttons } = props
+  const { widgets: buttons } = props
 
   return (
     <Box sx={{

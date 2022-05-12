@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LogoButton from '../mid-level/LogoButton'
 import SocialWidgets from '../mid-level/SocialWidgets';
 
-const buttons = {
+const widgets = {
   github: {
     url: 'https://github.com/pulchroxloom',
     icon: GitHubIcon,
@@ -43,7 +43,7 @@ const Footer = (props: Props) => {
         bottom: 0
       }}>
         <LogoButton height={32} label='Dante Barbieri' />
-        <SocialWidgets buttons={buttons} />
+        <SocialWidgets widgets={widgets} />
       </AppBar>
     </footer>
   )

@@ -21,7 +21,7 @@ const Navbar = (props: Props) => {
     }}>
       <nav style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
         <LogoButton height={48} />
-        <NavButtons buttons={buttons} activeButton={window.location.pathname} />
+        <NavButtons buttons={buttons} />
       </nav>
     </AppBar>
   )
