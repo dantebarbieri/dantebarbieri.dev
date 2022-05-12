@@ -1,6 +1,4 @@
 import { Typography } from '@mui/material'
-import React from 'react'
-import { transform } from 'typescript'
 import { theme } from '../../utils/theme'
 import BoxButton from '../atomic-level/BoxButton'
 
