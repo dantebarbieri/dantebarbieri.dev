@@ -28,24 +28,22 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <footer>
-      <AppBar position='static' sx={{
-        padding: theme.spacing(2),
-        paddingRight: theme.spacing(5),
-        color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.background.default,
-        boxShadow: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-        top: 'auto',
-        bottom: 0
-      }}>
-        <LogoButton height={32} label='Dante Barbieri' />
-        <SocialWidgets widgets={widgets} />
-      </AppBar>
-    </footer>
+    <AppBar component='footer' position='static' sx={{
+      padding: theme.spacing(2),
+      paddingRight: theme.spacing(5),
+      color: theme.palette.primary.contrastText,
+      backgroundColor: theme.palette.background.default,
+      boxShadow: 'none',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+      top: 'auto',
+      bottom: 0
+    }}>
+      <LogoButton height={32} label='Dante Barbieri' />
+      <SocialWidgets widgets={widgets} />
+    </AppBar>
   )
 }
 
