@@ -1,4 +1,5 @@
-import { Typography } from '@mui/material'
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
 import React from 'react'
 import logo from '../../assets/logo-white.svg'
 import { theme } from '../../utils/theme'
@@ -35,14 +36,14 @@ const buttons = {
 
 const HomeInfo = (props: Props) => {
   return (
-    <div style={{
+    <Box style={{
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-around',
       alignItems: 'center',
       backgroundColor: theme.palette.background.default,
       color: theme.palette.primary.main,
-      height: '100vh',
+      height: '97.5vh',
       paddingLeft: theme.spacing(14),
       paddingRight: theme.spacing(14)
     }}>
@@ -53,13 +54,13 @@ const HomeInfo = (props: Props) => {
       <Typography variant='h2' sx={{fontSize: theme.spacing(6), textAlign: 'center', marginBottom: theme.spacing(12)}}>
         Software engineer &amp; pasta fanatic. Lover of systems programming, reading, and playing board games. 
       </Typography>
-      <div style={{marginBottom: theme.spacing(48)}}>
+      <Box style={{marginBottom: theme.spacing(48)}}>
         <NavButtons buttons={buttons} />
-      </div>
-      <div style={{marginBottom: theme.spacing(10)}}>
+      </Box>
+      <Box style={{marginBottom: theme.spacing(10)}}>
         <SocialWidgets widgets={widgets} />
-      </div>
-    </div>
+      </Box>
+    </Box>
   )
 }
 

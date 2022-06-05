@@ -4,6 +4,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* TODO: Fix bug on About page where animation not functional. */
 .slider:hover li {
     animation-play-state: paused !important;
 }

@@ -13,7 +13,7 @@ const Home = (props: Props) => {
         <HomeInfo />
       </Grid>
       <Grid item xs={6}>
-        <img src={fountain} alt='fountain outside sbisa' style={{width: '100%', height: '100vh', objectFit: 'cover'}} />
+        <img src={fountain} alt='fountain outside sbisa' style={{width: '100%', height: '97.5vh', objectFit: 'cover'}} />
       </Grid>
       <Grid item xs={12}>
         <SplashText />
