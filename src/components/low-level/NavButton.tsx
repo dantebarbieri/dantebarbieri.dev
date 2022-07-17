@@ -1,5 +1,4 @@
-import { Typography } from '@mui/material'
-import { theme } from '../../utils/theme';
+import { Typography, useTheme } from '@mui/material'
 import BoxButton from '../atomic-level/BoxButton';
 
 type Props = {
@@ -8,6 +7,8 @@ type Props = {
 }
 
 const NavButton = (props: Props) => {
+  const theme = useTheme()
+
   const { text, href } = props
 
   return (
@@ -18,18 +19,16 @@ const NavButton = (props: Props) => {
         sx={{
           color: theme.palette.primary.main
         }}
-        hoverColor={theme.palette.secondary.main}
       >
         <Typography
           component="span"
-          variant="subtitle1"
+          variant="button"
           color="inherit"
           sx={{
             position: 'relative',
             p: theme.spacing(7),
             pt: theme.spacing(4),
-            pb: theme.spacing(4),
-            fontSize: theme.spacing(3.5)
+            pb: theme.spacing(4)
           }}
         >
           {text}

@@ -15,11 +15,11 @@ const About = (props: Props) => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
       <img src={tree} alt='century tree' style={{ width: '100%', height: '85vh', objectFit: 'cover' }} />
-      <Typography variant='h1' sx={{ color: theme.palette.primary.main, position: 'absolute', fontSize: theme.spacing(16), fontWeight: 'bold', top: theme.spacing(8), left: theme.spacing(12) }}>
+      <Typography variant='h2' sx={{ color: theme.palette.primary.main, position: 'absolute', top: theme.spacing(8), left: theme.spacing(12) }}>
         About Me
       </Typography>
-      <Box sx={{ width: '100%', backgroundColor: theme.palette.background.default, p: theme.spacing(10), boxSizing: 'border-box' }}>
-        <Greetings color={theme.palette.primary.dark} fontSize={theme.spacing(12)} />
+      <Box sx={{ width: '100%', p: theme.spacing(10), boxSizing: 'border-box' }}>
+        <Greetings />
         <Grid container justifyContent='center' alignContent='stretch'>
           <Grid item md={6}>
             <Typography sx={{ color: theme.palette.primary.main, fontSize: theme.spacing(6), paddingBottom: theme.spacing(7), m: `0 ${theme.spacing(10)}` }}>

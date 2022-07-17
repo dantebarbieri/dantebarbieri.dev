@@ -1,6 +1,7 @@
 import Typography from '@mui/material/Typography'
 import useTheme from '@mui/material/styles/useTheme'
 import React from 'react'
+import Box from '@mui/material/Box'
 
 const greetings = {
     'cycle': 'Howdy!',
@@ -10,40 +11,37 @@ const greetings = {
     'cycle5': 'こんにちは！'
 }
 
-type Props = {
-    color: string
-    fontSize: string
-}
+type Props = {}
 
 const Greetings = (props: Props) => {
-    const { color, fontSize } = props
-
     const theme = useTheme()
 
     return (
-        <div className='slider' style={{ height: theme.spacing(20), width: '100%', margin: '0 auto 0', overflow: 'visible', position: 'relative', marginTop: theme.spacing(8), marginBottom: theme.spacing(12) }}>
-            <div style={{ height: '100%', overflow: 'hidden' }}>
-                <ul style={{ height: '100%', margin: 0, padding: 0, position: 'relative' }}>
-                    {Object.entries(greetings).map(([animationName, greeting]) => (
-                        <li
+        <>
+        <Box className='slider' height={theme.spacing(20)} width='100%' mx='auto' overflow='visible' position='relative' mt={theme.spacing(8)} mb={theme.spacing(12)}>
+            <Box height='100%' overflow='hidden'>
+                <Box component='ul' height='100%' m={0} p={0} position='relative'>
+                {Object.entries(greetings).map(([animationName, greeting]) => (
+                        <Box component='li'
                             key={animationName}
-                            style={{
-                                width: 'auto',
-                                height: '100%',
-                                position: 'absolute',
-                                right: '50%',
+                            width='auto'
+                            height='100%'
+                            position='absolute'
+                            right='50%'
+                            sx={{
                                 listStyle: 'none',
                                 animation: `${animationName} 15s linear infinite`,
                                 transform: 'translateX(50%)'
                             }}>
-                            <Typography variant='h2' sx={{ width: 'auto', fontSize: fontSize, fontWeight: 'bold', color: color, textAlign: 'center' }}>
+                            <Typography variant='h3' sx={{ width: 'auto', textAlign: 'center' }}>
                                 {greeting}
                             </Typography>
-                        </li>
+                        </Box>
                     ))}
-                </ul>
-            </div>
-        </div>
+                </Box>
+            </Box>
+        </Box>
+        </>
     )
 }
 

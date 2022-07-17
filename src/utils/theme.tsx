@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, PaletteColorOptions, responsiveFontSizes } from '@mui/material/styles';
 
 declare module '@mui/material/styles' {
   interface Theme {
@@ -10,29 +10,42 @@ declare module '@mui/material/styles' {
   }
 }
 
-export const theme = createTheme({
-    spacing: (factor: number) => `${0.25 * factor}rem`,
-    palette: {
-        background: {
-            default: '#121212'
-        },
-        primary: {
-            dark: '#fff',
-            light: '#121212',
-            main: '#fff',
-            contrastText: '#fff'
-        },
-        secondary: {
-          dark: '#d0fbe3',
-          light: '#136337',
-          main: '#96f5c1',
-          contrastText: '#e8fdf1'
-        }
+const myGreen: PaletteColorOptions = {
+  dark: '#63c191',
+  light: '#c8fff4',
+  main: '#95f4c1',
+  contrastText: '#e8fdf1'
+}
+
+const myWhite: PaletteColorOptions = {
+  main: '#f9f9f9',
+  light: '#fff',
+  dark: '#c6c6c6'
+}
+
+const spacing = (factor: number) => `${0.25 * factor}rem`
+
+export const theme = responsiveFontSizes(createTheme({
+  spacing,
+  palette: {
+    mode: 'dark',
+    primary: myWhite,
+    secondary: myGreen
+  },
+  typography: {
+    fontFamily: [
+      'Cabin',
+      'sans-serif'
+    ].join(','),
+    fontSize: 16,
+    h1: {
+      fontWeight: 'bolder'
     },
-    typography: {
-        fontFamily: [
-            'Cabin',
-            'sans-serif'
-        ].join(',')
+    h2: {
+      fontWeight: 'bolder'
+    },
+    h3: {
+      fontWeight: 'bolder'
     }
-});
+  }
+}));

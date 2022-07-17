@@ -15,8 +15,6 @@ const Navbar = (props: Props) => {
   return (
     <AppBar position='sticky' sx={{
       padding: theme.spacing(3),
-      color: theme.palette.primary.main,
-      backgroundColor: theme.palette.background.default,
       boxShadow: 'none'
     }}>
       <nav style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>

@@ -11,6 +11,7 @@ import Work from './routes/Work'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './utils/theme';
+import Paper from '@mui/material/Paper';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -19,6 +20,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       {window.location.pathname !== '/' && (<Navbar />)}
+      <Paper square sx={{flexGrow: 1}}>
       <Router basename={`/${process.env.PUBLIC_URL}`}>
         <Routes>
           <Route path="" element={<Home />} />
@@ -27,6 +29,7 @@ root.render(
           <Route path="contact" element={<Contact />} />
         </Routes>
       </Router>
+      </Paper>
       <Footer />
     </ThemeProvider>
   </React.StrictMode>

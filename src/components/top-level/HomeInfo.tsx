@@ -36,22 +36,21 @@ const buttons = {
 
 const HomeInfo = (props: Props) => {
   return (
-    <Box style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      backgroundColor: theme.palette.background.default,
-      color: theme.palette.primary.main,
-      height: '97.5vh',
-      paddingLeft: theme.spacing(14),
-      paddingRight: theme.spacing(14)
-    }}>
+    <Box
+    display={'flex'}
+      flexDirection={'column'}
+      justifyContent={'space-around'}
+      alignItems={'center'}
+      height={'97.5vh'}
+      pl={theme.spacing(14)}
+      pr={theme.spacing(14)}
+      bgcolor={theme.palette.background.paper}
+    >
       <img src={logo} alt="logo" height={theme.spacing(250)} style={{marginTop: theme.spacing(10)}} />
-      <Typography variant='h1' sx={{fontSize: theme.spacing(16), fontWeight: 'bold', marginTop: theme.spacing(12), marginBottom: theme.spacing(8) }}>
+      <Typography variant='h3' sx={{marginTop: theme.spacing(12), marginBottom: theme.spacing(8) }}>
         Dante Barbieri
       </Typography>
-      <Typography variant='h2' sx={{fontSize: theme.spacing(6), textAlign: 'center', marginBottom: theme.spacing(12)}}>
+      <Typography variant='h5' sx={{textAlign: 'center', marginBottom: theme.spacing(12)}}>
         Software engineer &amp; pasta fanatic. Lover of systems programming, reading, and playing board games. 
       </Typography>
       <Box style={{marginBottom: theme.spacing(48)}}>

@@ -31,8 +31,6 @@ const Footer = (props: Props) => {
     <AppBar component='footer' position='static' sx={{
       padding: theme.spacing(2),
       paddingRight: theme.spacing(5),
-      color: theme.palette.primary.contrastText,
-      backgroundColor: theme.palette.background.default,
       boxShadow: 'none',
       display: 'flex',
       alignItems: 'center',
