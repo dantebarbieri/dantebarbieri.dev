@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5506b35.css",
-    "main.js": "/static/js/main.764c9290.js",
+    "main.css": "/static/css/main.a7217bbc.css",
+    "main.js": "/static/js/main.120327e3.js",
     "static/js/787.efa2b2f1.chunk.js": "/static/js/787.efa2b2f1.chunk.js",
     "static/media/dante.jpg": "/static/media/dante.33dbd378d927a79f69a3.jpg",
-    "static/media/fountain.jpg": "/static/media/fountain.a0e3510cbfb7adff7b6e.jpg",
     "static/media/tree.jpg": "/static/media/tree.f45f1f347fc088375c3f.jpg",
+    "static/media/0002484207650_5_A1C1_1200.png": "/static/media/0002484207650_5_A1C1_1200.0774f8de454c6d594afa.png",
+    "static/media/20220525_091608.jpg": "/static/media/20220525_091608.48dd975b80f5d3fa5361.jpg",
+    "static/media/QuartoSpiel.jpg": "/static/media/QuartoSpiel.d3ee6c786bb1abbd162e.jpg",
+    "static/media/3f10a4c3-686f-4aa1-af71-22bfc021ccd0_z.jpg": "/static/media/3f10a4c3-686f-4aa1-af71-22bfc021ccd0_z.3927757098fdfc271ceb.jpg",
     "static/media/logo-white.svg": "/static/media/logo-white.d18415598fe1846b344007f990ce5339.svg",
     "index.html": "/index.html",
-    "main.e5506b35.css.map": "/static/css/main.e5506b35.css.map",
-    "main.764c9290.js.map": "/static/js/main.764c9290.js.map",
+    "main.a7217bbc.css.map": "/static/css/main.a7217bbc.css.map",
+    "main.120327e3.js.map": "/static/js/main.120327e3.js.map",
     "787.efa2b2f1.chunk.js.map": "/static/js/787.efa2b2f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5506b35.css",
-    "static/js/main.764c9290.js"
+    "static/css/main.a7217bbc.css",
+    "static/js/main.120327e3.js"
   ]
 }
