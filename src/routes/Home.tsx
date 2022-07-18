@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '@mui/material/Grid/Grid'
 import SplashText from '../components/low-level/SplashText'
 import HomeInfo from '../components/top-level/HomeInfo'
-import fountain from '../assets/fountain.jpg'
+import DanteItaly from '../assets/20220525_091608.jpg'
 
 type Props = {}
 
@@ -13,7 +13,7 @@ const Home = (props: Props) => {
         <HomeInfo />
       </Grid>
       <Grid item xs={6}>
-        <img src={fountain} alt='fountain outside sbisa' style={{width: '100%', height: '97.5vh', objectFit: 'cover'}} />
+        <img src={DanteItaly} alt='Dante atop Florence' style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '67% 100%'}} />
       </Grid>
       <Grid item xs={12}>
         <SplashText />

@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import { AppleIcon, AwsIcon, AzureIcon, CppIcon, JavaIcon, LatexIcon, LinuxIcon, PostgresqlIcon, ProcessingIcon, PythonIcon, ReactIcon, ShellIcon, TypescriptIcon, WindowsIcon } from '../low-level/TechnologyIcon'
+import { AppleIcon, AwsIcon, AzureIcon, CppIcon, JavaIcon, LatexIcon, LinuxIcon, PostgresqlIcon, ProcessingIcon, PythonIcon, ReactIcon, ShellIcon, TypescriptIcon, WindowsIcon } from '../atomic-level/TechnologyIcon'
 import useTheme from '@mui/material/styles/useTheme'
 import Tooltip from '@mui/material/Tooltip'
 import Typography from '@mui/material/Typography'

@@ -11,13 +11,13 @@ const EmployerCards = (props: Props) => {
         position='Software Engineer'
         employer='Microsoft'
         start='August 2022' end='Present'
-        points={['Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur']}
+        points={['Working on Azure Edge Zones', 'Introducing new features to Azure\'s Edge']}
       />
       <EmployerCard
         position='Software Engineering Intern'
         employer='Microsoft'
         start='May 2020' end='August 2021'
-        points={['Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur']} />
+        points={['Developed web pages to fetch and display detailed statistics from an Azure Edge Cluster', 'Implemented a feature where Azure Ephemeral OS Disks are usable in Azure Edge Zones', 'Worked with a variety of teams and several different technologies']} />
     </Box>
   )
 }
