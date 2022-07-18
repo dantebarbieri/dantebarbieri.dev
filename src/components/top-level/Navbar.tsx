@@ -8,7 +8,7 @@ type Props = {}
 const buttons = {
   'About': '/about',
   'My Work': '/work',
-  'Contact': '/contact',
+  'Contact': 'mailto:contact@dantebarbieri.dev',
 }
 
 const Navbar = (props: Props) => {

@@ -1,11 +1,11 @@
 import React from 'react'
-import { AppBar } from '@mui/material'
-import { theme } from '../../utils/theme'
+import AppBar from '@mui/material/AppBar'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import LogoButton from '../mid-level/LogoButton'
 import SocialWidgets from '../mid-level/SocialWidgets';
+import useTheme from '@mui/material/styles/useTheme';
 
 const widgets = {
   github: {
@@ -19,7 +19,7 @@ const widgets = {
     blank: true
   },
   email: {
-    url: 'contact',
+    url: 'mailto:contact@dantebarbieri.dev',
     icon: EmailIcon
   }
 }
@@ -27,6 +27,8 @@ const widgets = {
 type Props = {}
 
 const Footer = (props: Props) => {
+  const theme = useTheme()
+
   return (
     <AppBar component='footer' position='static' sx={{
       padding: theme.spacing(2),

@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Footer from './components/top-level/Footer'
 import Navbar from './components/top-level/Navbar'
 import About from './routes/About'
-import Contact from './routes/Contact'
 import Home from './routes/Home'
 import Work from './routes/Work'
 import './index.css';
@@ -26,7 +25,6 @@ root.render(
           <Route path="" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="work" element={<Work />} />
-          <Route path="contact" element={<Contact />} />
         </Routes>
       </Router>
       </Paper>

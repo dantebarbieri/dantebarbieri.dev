@@ -21,7 +21,7 @@ const widgets = {
     blank: true
   },
   email: {
-    url: 'contact',
+    url: 'mailto:contact@dantebarbieri.dev',
     icon: EmailIcon
   }
 }
@@ -31,7 +31,7 @@ type Props = {}
 const buttons = {
   'About': '/about',
   'My Work': '/work',
-  'Contact': '/contact',
+  'Contact': 'mailto:contact@dantebarbieri.dev',
 }
 
 const HomeInfo = (props: Props) => {
