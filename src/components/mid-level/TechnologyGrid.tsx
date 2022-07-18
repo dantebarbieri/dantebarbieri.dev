@@ -14,6 +14,16 @@ const TechnologyGrid = (props: Props) => {
 
   return (
     <Box display='flex' flexWrap='wrap' justifyContent='center' alignItems='center' m={10}>
+      <Tooltip title='Windows' placement='top'>
+        <WindowsIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
+      </Tooltip>
+      <Tooltip title='Linux' placement='top'>
+        <LinuxIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
+      </Tooltip>
+      <Tooltip title='macOS' placement='top'>
+        <AppleIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
+      </Tooltip>
+      <Typography fontSize='large' margin={4}>|</Typography>
       <Tooltip title='C++' placement='top'>
         <CppIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
       </Tooltip>
@@ -41,17 +51,7 @@ const TechnologyGrid = (props: Props) => {
       <Tooltip title='Shell' placement='top'>
         <ShellIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
       </Tooltip>
-      <Typography fontSize='large' margin={2}>|</Typography>
-      <Tooltip title='Windows' placement='top'>
-        <WindowsIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
-      </Tooltip>
-      <Tooltip title='Linux' placement='top'>
-        <LinuxIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
-      </Tooltip>
-      <Tooltip title='macOS' placement='top'>
-        <AppleIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
-      </Tooltip>
-      <Typography fontSize='large' margin={2}>|</Typography>
+      <Typography fontSize='large' margin={4}>|</Typography>
       <Tooltip title='Azure' placement='top'>
         <AzureIcon fontSize='large' sx={{ m: 2, '&:hover': { fill: theme.palette.secondary.main } }} />
       </Tooltip>
