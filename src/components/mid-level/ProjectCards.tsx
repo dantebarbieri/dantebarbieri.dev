@@ -1,12 +1,18 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import ProjectCard from '../low-level/ProjectCard'
+import useTheme from '@mui/material/styles/useTheme'
 
 type Props = {}
 
 const ProjectCards = (props: Props) => {
+  const theme = useTheme()
+
   return (
-    <Box display='flex' flexDirection='row' justifyContent='center' alignItems='stretch' flexWrap='wrap'>
+    <Box display='flex' flexDirection='row' justifyContent='center' alignItems='stretch' flexWrap='wrap' sx={{[theme.breakpoints.down('md')]: {
+      flexDirection: 'column',
+      alignItems: 'center'
+    }}}>
       <ProjectCard
         title='TIAS'
         description='Computer Science student employee scheduler for Peer Teachers at Texas A&M University. Web application.'

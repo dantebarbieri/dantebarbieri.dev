@@ -9,10 +9,10 @@ type Props = {}
 const Home = (props: Props) => {
   return (
     <Grid container justifyContent='center'>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <HomeInfo />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <img src={DanteItaly} alt='Dante atop Florence' style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '67% 100%'}} />
       </Grid>
       <Grid item xs={12}>

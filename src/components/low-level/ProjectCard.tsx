@@ -91,7 +91,9 @@ const ProjectCard = (props: Props) => {
   }
 
   return (
-    <Card variant='outlined' sx={{ maxWidth: '30vw', minWidth: '20vw', m: 3.3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+    <Card variant='outlined' sx={{ width: '30vw', m: 3.3, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', [theme.breakpoints.down('md')]: {
+      width: '80%'
+    } }}>
       <CardHeader title={title} titleTypographyProps={{ color: theme.palette.secondary.main, align: 'center', pb: 3, mt: 1.3, fontWeight: 'bold' }} subheader={description} subheaderTypographyProps={{ color: theme.palette.primary.main, align: 'center' }} action={repository ? <IconButton sx={{ position: 'absolute', top: theme.spacing(1), right: theme.spacing(1) }} size='small' href={repository}><GitHub htmlColor={theme.palette.primary.dark} fontSize="small" /></IconButton> : undefined} sx={{ position: 'relative' }} />
       <CardActions sx={{ justifyContent: 'center' }}>
         <Button variant='contained' href={href}><Typography variant='button'>Explore</Typography></Button>

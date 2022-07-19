@@ -17,7 +17,10 @@ const NavButton = (props: Props) => {
         disableRipple
         href={href}
         sx={{
-          color: theme.palette.primary.main
+          color: theme.palette.primary.main,
+          px: theme.spacing(7),
+          py: theme.spacing(4),
+          m: theme.spacing(2)
         }}
       >
         <Typography
@@ -25,10 +28,7 @@ const NavButton = (props: Props) => {
           variant="button"
           color="inherit"
           sx={{
-            position: 'relative',
-            p: theme.spacing(7),
-            pt: theme.spacing(4),
-            pb: theme.spacing(4)
+            position: 'relative'
           }}
         >
           {text}

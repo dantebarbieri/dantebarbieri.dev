@@ -1,12 +1,12 @@
-import Box from '@mui/material/Box'
 import React from 'react'
+import Box from '@mui/material/Box'
 import EmployerCard from '../low-level/EmployerCard'
 
 type Props = {}
 
 const EmployerCards = (props: Props) => {
   return (
-    <Box display='flex' flexDirection='column' justifyContent='center' alignItems='stretch' px={20}>
+    <Box display='flex' flexDirection='column' justifyContent='center' alignItems='stretch' px={20} width='100%' boxSizing='border-box'>
       <EmployerCard
         position='Software Engineer'
         employer='Microsoft'

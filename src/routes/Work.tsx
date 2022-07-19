@@ -9,17 +9,17 @@ type Props = {}
 
 const Work = (props: Props) => {
   return (
-    <Box>
+    <Box display='flex' flexDirection='column' alignItems='center'>
       <Typography variant='h2' align='center' my={12}>Explore My Work</Typography>
-      <Box component='section'>
+      <Box component='section' display='flex' flexDirection='column' alignItems='center'>
         <Typography variant='h3' align='center' mt={12}>Featured Work</Typography>
         <ProjectCards />
       </Box>
-      <Box component='section'>
+      <Box component='section' display='flex' flexDirection='column' alignItems='center'>
         <Typography variant='h3' align='center' mt={12}>Where I've Worked</Typography>
         <EmployerCards />
       </Box>
-      <Box component='section'>
+      <Box component='section' display='flex' flexDirection='column' alignItems='center'>
         <Typography variant='h3' align='center' mt={12}>Technologies</Typography>
         <TechnologyGrid />
       </Box>

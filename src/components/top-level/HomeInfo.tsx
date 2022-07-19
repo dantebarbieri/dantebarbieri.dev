@@ -47,14 +47,16 @@ const HomeInfo = (props: Props) => {
       bgcolor={theme.palette.background.paper}
     >
       <img src={logo} alt="logo" height={theme.spacing(250)} style={{marginTop: theme.spacing(10)}} />
-      <Typography variant='h3' sx={{marginTop: theme.spacing(12), marginBottom: theme.spacing(8) }}>
+      <Typography variant='h3' align='center' sx={{marginTop: theme.spacing(12), marginBottom: theme.spacing(8) }}>
         Dante Barbieri
       </Typography>
-      <Typography variant='h5' sx={{textAlign: 'center', marginBottom: theme.spacing(12)}}>
+      <Typography variant='h5' align='center' sx={{marginBottom: theme.spacing(12)}}>
         Software engineer &amp; pasta fanatic. Lover of systems programming, reading, and playing board games. 
       </Typography>
-      <Box style={{marginBottom: theme.spacing(48)}}>
-        <NavButtons buttons={buttons} />
+      <Box marginBottom={theme.spacing(48)} sx={{[theme.breakpoints.down(1075)]: {marginBottom: theme.spacing(12)}}}>
+        <NavButtons buttons={buttons} sxProps={{[theme.breakpoints.down(1075)]: {
+        flexDirection: 'column'
+      }}} />
       </Box>
       <Box style={{marginBottom: theme.spacing(10)}}>
         <SocialWidgets widgets={widgets} />

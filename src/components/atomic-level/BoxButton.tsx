@@ -15,13 +15,12 @@ const BoxButton = styled(Button, { shouldForwardProp: (propName) => propName !==
     position: 'relative',
     [theme.breakpoints.down('sm')]: {
       width: '100% !important', // Overrides inline-style
-      height: 100,
     },
-    '& .MuiTypography-root': {
-      border: '2px solid currentColor',
-    },
+    border: '2px solid currentColor',
+    borderRadius: 0,
     '&:hover, &.Mui-focusVisible': {
       zIndex: 1,
+      color: trueHoverColor,
       '& .MuiTypography-root': {
         color: trueHoverColor
       },
