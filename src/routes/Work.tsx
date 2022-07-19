@@ -9,7 +9,7 @@ type Props = {}
 
 const Work = (props: Props) => {
   return (
-    <Box display='flex' flexDirection='column' alignItems='center'>
+    <Box display='flex' flexDirection='column' alignItems='center' p={0} m={0}>
       <Typography variant='h2' align='center' my={12}>Explore My Work</Typography>
       <Box component='section' display='flex' flexDirection='column' alignItems='center'>
         <Typography variant='h3' align='center' mt={12}>Featured Work</Typography>

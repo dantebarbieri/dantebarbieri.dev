@@ -1,5 +1,6 @@
 import AppBar from '@mui/material/AppBar'
 import useTheme from '@mui/material/styles/useTheme'
+import useMediaQuery from '@mui/material/useMediaQuery'
 import LogoButton from '../mid-level/LogoButton'
 import NavButtons from '../mid-level/NavButtons'
 
@@ -14,7 +15,9 @@ const buttons = {
 const Navbar = (props: Props) => {
   const theme = useTheme()
 
-  const mediaQuery = theme.breakpoints.down('sm')
+  const mediaQuery = theme.breakpoints.down(378)
+
+  const hideLogo = useMediaQuery(mediaQuery)
 
   return (
     <AppBar position='sticky' component='nav' sx={{
@@ -24,10 +27,12 @@ const Navbar = (props: Props) => {
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'row',
-      
+      [mediaQuery]: {
+        justifyContent: 'center'
+      }
     }}>
-      <LogoButton height={48} />
-      <NavButtons buttons={buttons} sxButton={{[mediaQuery]: {
+      {!hideLogo && <LogoButton height={48} />}
+      <NavButtons buttons={buttons} sxButton={{[theme.breakpoints.down('sm')]: {
         px: theme.spacing(3),
         py: theme.spacing(2),
         m: theme.spacing(0.5)

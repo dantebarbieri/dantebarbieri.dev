@@ -1,12 +1,15 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import EmployerCard from '../low-level/EmployerCard'
+import useTheme from '@mui/material/styles/useTheme'
 
 type Props = {}
 
 const EmployerCards = (props: Props) => {
+  const theme = useTheme()
+
   return (
-    <Box display='flex' flexDirection='column' justifyContent='center' alignItems='stretch' px={20} width='100%' boxSizing='border-box'>
+    <Box display='flex' flexDirection='column' justifyContent='center' alignItems='stretch' px={20} width='100%' boxSizing='border-box' sx={{[theme.breakpoints.down('md')]: {px: 10}, [theme.breakpoints.down('sm')]: {px: 5}}}>
       <EmployerCard
         position='Software Engineer'
         employer='Microsoft'
