@@ -13,9 +13,6 @@ const BoxButton = styled(Button, { shouldForwardProp: (propName) => propName !==
 
   return {
     position: 'relative',
-    [theme.breakpoints.down('sm')]: {
-      width: '100% !important', // Overrides inline-style
-    },
     border: '2px solid currentColor',
     borderRadius: 0,
     '&:hover, &.Mui-focusVisible': {

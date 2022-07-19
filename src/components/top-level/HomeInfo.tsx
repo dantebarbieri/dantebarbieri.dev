@@ -54,7 +54,7 @@ const HomeInfo = (props: Props) => {
         Software engineer &amp; pasta fanatic. Lover of systems programming, reading, and playing board games. 
       </Typography>
       <Box marginBottom={theme.spacing(48)} sx={{[theme.breakpoints.down(1075)]: {marginBottom: theme.spacing(12)}}}>
-        <NavButtons buttons={buttons} sxProps={{[theme.breakpoints.down(1075)]: {
+        <NavButtons buttons={buttons} sxGroup={{[theme.breakpoints.down(1075)]: {
         flexDirection: 'column'
       }}} />
       </Box>

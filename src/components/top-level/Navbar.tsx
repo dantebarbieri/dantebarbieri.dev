@@ -14,6 +14,8 @@ const buttons = {
 const Navbar = (props: Props) => {
   const theme = useTheme()
 
+  const mediaQuery = theme.breakpoints.down('sm')
+
   return (
     <AppBar position='sticky' component='nav' sx={{
       padding: theme.spacing(3),
@@ -22,21 +24,14 @@ const Navbar = (props: Props) => {
       alignItems: 'center',
       justifyContent: 'space-between',
       flexDirection: 'row',
-      [theme.breakpoints.down('sm')]: {
-        flexDirection: 'column'
-      }
+      
     }}>
       <LogoButton height={48} />
-      <NavButtons buttons={buttons} sxProps={{
-        [theme.breakpoints.down('sm')]: {
-          flexDirection: 'column',
-          width: '50%'
-        },
-        [theme.breakpoints.down(500)]: {
-          flexDirection: 'column',
-          width: '75%'
-        }
-      }} />
+      <NavButtons buttons={buttons} sxButton={{[mediaQuery]: {
+        px: theme.spacing(3),
+        py: theme.spacing(2),
+        m: theme.spacing(0.5)
+      }}} />
     </AppBar>
   )
 }

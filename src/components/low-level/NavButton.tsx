@@ -1,15 +1,16 @@
-import { Typography, useTheme } from '@mui/material'
+import { SxProps, Typography, useTheme } from '@mui/material'
 import BoxButton from '../atomic-level/BoxButton';
 
 type Props = {
   text: string
   href: string
+  sx: SxProps
 }
 
 const NavButton = (props: Props) => {
   const theme = useTheme()
 
-  const { text, href } = props
+  const { text, href, sx } = props
 
   return (
       <BoxButton
@@ -20,7 +21,8 @@ const NavButton = (props: Props) => {
           color: theme.palette.primary.main,
           px: theme.spacing(7),
           py: theme.spacing(4),
-          m: theme.spacing(2)
+          m: theme.spacing(2),
+          ...sx
         }}
       >
         <Typography

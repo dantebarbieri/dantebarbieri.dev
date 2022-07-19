@@ -3,12 +3,13 @@ import Box from '@mui/material/Box'
 import NavButton from '../low-level/NavButton'
 
 type Props = {
-  buttons: { [key: string]: string },
-  sxProps?: SxProps
+  buttons: { [key: string]: string }
+  sxGroup?: SxProps
+  sxButton?: SxProps
 }
 
 const NavButtons = (props: Props) => {
-  const { buttons, sxProps } = props
+  const { buttons, sxGroup, sxButton } = props
 
   return (
     <Box sx={{
@@ -16,11 +17,11 @@ const NavButtons = (props: Props) => {
       flexWrap: 'wrap',
       justifyContent: 'stretch',
       alignItems: 'stretch',
-      ...sxProps
+      ...sxGroup
     }}>
       {
         Object.entries(buttons).map(([key, value]) => (
-          <NavButton key={key} text={key} href={value} />
+          <NavButton key={key} text={key} href={value} sx={{...sxButton}} />
         ))
       }
     </Box>
