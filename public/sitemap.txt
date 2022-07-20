@@ -1,4 +1,3 @@
 https://dantebarbieri.dev
 https://dantebarbieri.dev/?/about
 https://dantebarbieri.dev/?/work
-https://dantebarbieri.dev/?/contact
